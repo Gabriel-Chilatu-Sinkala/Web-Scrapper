@@ -1,9 +1,6 @@
 # Web-Scrapper
 
 Web Scraping With Scrapy and MongoDB
-Web Scraping With Scrapy and MongoDB
-by Martin Breuss  Aug 28, 2024 112 Comments  intermediate databases web-scraping
-Table of Contents
 
 Prepare the Scraper Scaffolding
 Install the Scrapy Package
