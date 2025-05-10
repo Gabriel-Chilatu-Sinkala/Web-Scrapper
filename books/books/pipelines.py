@@ -38,13 +38,12 @@ class MongoPipeline:
 
     def process_item(self, item, spider):
         item_id = self.compute_item_id(item)
-        item_dict = ItemAdapter(item).asdict()
-
-        self.db[self.COLLECTION_NAME].update_one(
-            filter={"_id": item_id},
-            update={"$set": item_dict},
-            upsert=True
-        )
+        if self.db[self.COLLECTION_NAME].find_one({"_id": item_id}):
+            raise DropItem(f"Duplicate item found: {item}")
+        else:
+            item["_id"] = item_id
+            self.db[self.COLLECTION_NAME].insert_one(ItemAdapter(item).asdict())
+            return item
 
         return item
 
