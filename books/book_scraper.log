@@ -5918,3 +5918,77 @@
 {'price': '£26.08',
  'title': '1,000 Places to See Before You Die',
  'url': '1000-places-to-see-before-you-die_1/index.html'}
+2025-05-12 06:07:57 [twisted] CRITICAL: Unhandled error in Deferred:
+2025-05-12 06:07:57 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\twisted\internet\defer.py", line 2017, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\crawler.py", line 152, in crawl
+    self.engine = self._create_engine()
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\crawler.py", line 166, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\core\engine.py", line 101, in __init__
+    self.downloader: Downloader = downloader_cls(crawler)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\core\downloader\__init__.py", line 109, in __init__
+    DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\middleware.py", line 77, in from_crawler
+    return cls._from_settings(crawler.settings, crawler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\middleware.py", line 86, in _from_settings
+    mwcls = load_object(clspath)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\utils\misc.py", line 71, in load_object
+    mod = import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'scrapy_user_agents'
+2025-05-12 06:08:28 [twisted] CRITICAL: Unhandled error in Deferred:
+2025-05-12 06:08:28 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\twisted\internet\defer.py", line 2017, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\crawler.py", line 152, in crawl
+    self.engine = self._create_engine()
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\crawler.py", line 166, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\core\engine.py", line 101, in __init__
+    self.downloader: Downloader = downloader_cls(crawler)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\core\downloader\__init__.py", line 109, in __init__
+    DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\middleware.py", line 77, in from_crawler
+    return cls._from_settings(crawler.settings, crawler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\middleware.py", line 86, in _from_settings
+    mwcls = load_object(clspath)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GABRIEL\Desktop\Web Scrapper\Web-Scrapper\env\Lib\site-packages\scrapy\utils\misc.py", line 71, in load_object
+    mod = import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'scrapy_user_agents'
